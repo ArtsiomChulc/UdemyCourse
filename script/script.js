@@ -228,3 +228,14 @@ writeYourGenres();
 
 // console.log(getMathResult(5, 5));
 
+// Практика 29 ч.3
+function calculateVolumeAndArea(s) {
+    let V = s * s * s;
+    let S = 6 * (s * s);
+    if (typeof (s) !== 'number' || s < 0 || !Number.isInteger(s)) {
+        return 'При вычислении произошла ошибка';
+    } else {
+        return `Объем куба: ${V}, площадь всей поверхности: ${S}`;
+    }
+}
+console.log(calculateVolumeAndArea(12));
